@@ -9,7 +9,8 @@
 }
 
 body{
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1440px;
   color: black;
   font-family: 'Raleway', 'sans-serif';
 }
@@ -26,21 +27,6 @@ ul{
 a{
   text-decoration: none;
   color: inherit;
-}
-
-img{
-  max-width: 100%;
-  height: auto;
-}
-
-button{
-    border: none;
-    background: none;
-    outline: none;
-}
-
-button:hover{
-    cursor: pointer;
 }
 
 /*========== HEADER SECTION ==========*/
@@ -181,6 +167,10 @@ form .search-button p{
     margin: 0;
 }
 
+.search-icon{
+    display: none;
+}
+
 .filters{
     display: flex;
     align-items: center;
@@ -210,10 +200,6 @@ form .search-button p{
 
 .filters-btns p{
     padding: 0 15px;
-}
-
-.search-icon{
-    display: none;
 }
 
 .filters-btns .filter-button{
@@ -288,6 +274,10 @@ form .search-button p{
 
 .card:hover{
     transform: scale(1.02);
+}
+
+.card span{
+    font-weight: bold;
 }
 
 .card-content{
@@ -399,7 +389,7 @@ form .search-button p{
     padding: 16px 10px;
 }
 
-@media (max-width: 1037px){
+@media (max-width: 1019px){
     .card-container-right{
         flex-direction: row;
         column-gap: 10px;
@@ -515,25 +505,25 @@ form .search-button p{
     background: black;
 }
 
-@media (max-width: 1020px){
+@media (max-width: 1003.5px){
     .small-activity-card:last-of-type{
         flex-direction: row;
     }
 }
 
-@media (max-width: 770px){
+@media (max-width: 760px){
     .small-activity-card:last-of-type{
         flex-direction: column;
     }
 }
 
-@media (max-width: 541px){
+@media (max-width: 524px){
     .activity-card{
         max-height: 180px;
     }
 }
 
-@media (max-width: 508px){
+@media (max-width: 505px){
     .activities-section{
         padding: 24px;
     }
